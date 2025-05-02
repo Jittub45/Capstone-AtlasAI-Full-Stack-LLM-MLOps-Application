@@ -3,6 +3,9 @@ cred.txt
 cap 
 
 local_s3/
+data/
+models/
+
 
 
 # Byte-compiled / optimized / DLL files

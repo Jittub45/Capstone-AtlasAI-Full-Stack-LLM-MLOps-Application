@@ -1,14 +1,17 @@
-# data ingestion
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+
 import numpy as np
 import pandas as pd
 pd.set_option('future.no_silent_downcasting', True)
 
-import os
 from sklearn.model_selection import train_test_split
 import yaml
 import logging
 from src.logger import logging
 from src.connections import s3_connection
+
 
 
 def load_params(params_path: str) -> dict:
